@@ -1,3 +1,9 @@
 <?php
   define("ROOT", $_SERVER["DOCUMENT_ROOT"]);
-  echo ROOT;
+
+  /* Database constant function */ 
+  define("DBTYPE", "TYPE");
+  define("DBHOST", "HOST");
+  define("DBNAME", "NAME");
+  define("DBUSER", "USER");
+  define("DBPASS", "PASS");

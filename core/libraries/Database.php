@@ -1,20 +1,11 @@
 <?php
 class Database{
-  private $db_type;
-  private $host;
-  private $username;
-  private $password;
-  private $database_name;
+  private $db_type = DBTYPE;
+  private $host = DBHOST;
+  private $username = DBUSER;
+  private $password = DBPASS;
+  private $database_name = DBNAME;
   private $conn;
-
-  public function __construct($db_type = "mysql", $host, $username, $password, $database_name)
-  {
-    $this->db_type = $db_type;
-    $this->host = $host;
-    $this->username = $username;
-    $this->password = $password;
-    $this->database_name = $database_name;
-  }
 
   protected function connect(){
     $this->conn = null;
