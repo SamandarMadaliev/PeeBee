@@ -1,4 +1,4 @@
-<?
+<?php
 class Database{
   private $db_type;
   private $host;
