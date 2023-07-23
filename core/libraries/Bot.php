@@ -31,6 +31,9 @@ class Bot
   }
 
   public function setWebhook(){
+    $this->content = array(
+      "url"=>UROOT
+    );
     $this->sendRequest("setWebhook");
     echo $this->response;
   }
